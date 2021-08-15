@@ -154,36 +154,30 @@ points:
               rotate: 180
             nets:
               from: =column_net
-              to: GND
+              to: GND s
             params:
               keycaps: true
               reverse: true
 outlines:
   exports:
     raw:
-      - type: keys
-        side: left
-        size: [18,17]
-        corner: 1
       - type: polygon
         points:
           - ref: matrix_pinky_bottom
-            shift: [ -10 , -30 ]
+            shift: [ -10 , -31.5 ]
           - ref: matrix_pinky_top
             shift: [ -10, 16 ]
           - ref: matrix_middle_top
             shift: [ -9, 14 ]
           - ref: matrix_inner_top
-            shift: [ 25, 13 ]
+            shift: [ 30, 13 ]
           - ref: matrix_inner_top
-            shift: [ 45, 0 ]
-          - ref: matrix_inner_bottom
-            shift: [ 50, -38 ]
-          #- ref: thumbfan_far_thumb
-          #  shift: [ 10, 9 ] # top right of keycap
+            shift: [ 47.5, -0.5 ]
           - ref: thumbfan_far_thumb
-            shift: [ 10, -9 ] # bottom right of keycap
-        operation: add
+            shift: [ 10, 9 ]
+          - ref: thumbfan_far_thumb
+            shift: [ 10, -9 ]
+        operation: stack
     panel:
       - type: outline
         name: raw
@@ -225,18 +219,26 @@ pcbs:
       promicro:
         type: promicro
         anchor:
-          ref: matrix_inner_home
-          shift: [19, -8.5]
-          rotate: -90
+          ref: matrix_inner_top
+          shift: [28, -8]
+          rotate: -127
         params:
           orientation: down
-      jstph:
-        type: jstph
+      scrollwheel:
+        type: scrollwheel
+        anchor:
+          ref: matrix_index_bottom
+          shift: [ -3, -20 ]
+          rotate: -90
         nets:
-          pos: 5V #TODO
-          neg: GND
+          from: P20 # TODO fix
+          to: GND
+          A: P20  # TODO fix
+          B: P20  # TODO fix
+          C: P20  # TODO fix
+          D: P20  # TODO fix
         params:
-          side: B
+          reverse: true
 cases:
   switchplate:
     - type: outline # default option
