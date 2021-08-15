@@ -1,2 +1,4 @@
-# shebang-keyboards
-Collection of keyboards !#/kb/
+# !#/kb/
+
+A collection of keyboard hardware I'm working on
+
