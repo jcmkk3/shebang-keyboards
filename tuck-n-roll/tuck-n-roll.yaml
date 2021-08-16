@@ -8,80 +8,88 @@ points:
           rotate: 19  # 19 degrees
           stagger: 0 # affects distance to previous column so useless for a left pinky column
           spread: 0 # affects distance to previous column so useless for a left pinky column
-          key.footprints.diode.anchor.shift: [ 95, ]
           rows:
             bottom:
               column_net: P7
+              footprints.diode.anchor.shift: [ 100, -28 ]
             home:
               column_net: P6
+              footprints.diode.anchor.shift: [ 100, -40 ]
             top:
               column_net: P5
+              footprints.diode.anchor.shift: [ 100, -52 ]
         ring:
           origin: [ 0, -17 ]
           rotate: -4 # 15 degrees
           stagger: 10
           spread: 23
-          key.footprints.diode.anchor.shift: [ 77, ]
           rows:
             bottom:
               column_net: P4
+              footprints.diode.anchor.shift: [ 84, -31 ]
             home:
               column_net: P3
+              footprints.diode.anchor.shift: [ 84, -43 ]
             top:
               column_net: P0
+              footprints.diode.anchor.shift: [ 84, -55 ]
+
         middle:
           origin: [ 0, -17 ]
           rotate: -10 # 5 degrees
           stagger: -1
           spread: 18
-          key.footprints.diode.anchor.shift: [ 59, ]
           rows:
             bottom:
               column_net: P1
+              footprints.diode.anchor.shift: [ 71, -18 ]
             home:
               column_net: P19
+              footprints.diode.anchor.shift: [ 71, -30 ]
             top:
               column_net: P18
+              footprints.diode.anchor.shift: [ 71, -42 ]
         index:
           origin: [ 0, -17 ]
           rotate: -5 # 0 degrees
           stagger: -3
           spread: 20
-          key.footprints.diode.anchor.shift: [ 41, ]
           rows:
             bottom:
               column_net: P15
+              footprints.diode.anchor.shift: [ 55, -11 ]
             home:
               column_net: P14
+              footprints.diode.anchor.shift: [ 55, -23 ]
             top:
               column_net: P16
+              footprints.diode.anchor.shift: [ 55, -35 ]
         inner:
           origin: [ 0, -17 ]
           rotate: 0
           stagger: -1
-          key.footprints.diode.anchor.shift: [ 23, ]
           rows:
             bottom:
               column_net: P20
+              footprints.diode.anchor.shift: [ 40, -11 ]
             home:
               column_net: P20
+              footprints.diode.anchor.shift: [ 40, -23 ]
             top:
               column_net: P20
+              footprints.diode.anchor.shift: [ 40, -35 ]
       rows:
         # Choc Y spacing 17mm
         # NOTE: added .1mm to stop keycap outlines from merging
         bottom:
           padding: 17.1
           row_net: P10
-          footprints.diode.anchor.shift: [,-0]
         home:
           padding: 17.1
           row_net: P20
-          footprints.diode.anchor.shift: [,-12]
         top:
           padding: 17.1
           row_net: P21
-          footprints.diode.anchor.shift: [,-24]
     thumbfan:
       anchor:
         ref: matrix_inner_bottom
@@ -92,6 +100,8 @@ points:
           rows:
             thumb:
               column_net: P8
+              footprints.diode.anchor.shift: [ 38 , 17 ]
+              footprints.diode.anchor.rotate: 0
         home:
           spread: 19
           rotate: -10 # -25 degrees cumulative
@@ -99,6 +109,8 @@ points:
           rows:
             thumb:
               column_net: P9
+              footprints.diode.anchor.shift: [ 20, 19 ]
+              footprints.diode.anchor.rotate: 0
         far:
           spread: 19
           rotate: -10 # 35 degrees cumulative
@@ -106,6 +118,8 @@ points:
           rows:
             thumb:
               column_net: P10
+              footprints.diode.anchor.shift: [ 12 , 19 ]
+              footprints.diode.anchor.rotate: 0
       rows:
         thumb:
           padding: 0
