@@ -8,82 +8,46 @@ points:
           rotate: 19  # 19 degrees
           stagger: 0 # affects distance to previous column so useless for a left pinky column
           spread: 0 # affects distance to previous column so useless for a left pinky column
-          rows:
-            bottom:
-              column_net: P7
-              footprints.diode.anchor.shift: [ 100, -28 ]
-            home:
-              column_net: P6
-              footprints.diode.anchor.shift: [ 100, -40 ]
-            top:
-              column_net: P5
-              footprints.diode.anchor.shift: [ 100, -52 ]
+          key:
+            column_net: P4
+            column_mark: P
         ring:
           origin: [ 0, -17 ]
           rotate: -4 # 15 degrees
           stagger: 10
           spread: 23
-          rows:
-            bottom:
-              column_net: P4
-              footprints.diode.anchor.shift: [ 84, -31 ]
-            home:
-              column_net: P3
-              footprints.diode.anchor.shift: [ 84, -43 ]
-            top:
-              column_net: P0
-              footprints.diode.anchor.shift: [ 84, -55 ]
-
+          key:
+            column_net: P3
+            column_mark: R
         middle:
           origin: [ 0, -17 ]
           rotate: -10 # 5 degrees
           stagger: -1
           spread: 18
-          rows:
-            bottom:
-              column_net: P1
-              footprints.diode.anchor.shift: [ 71, -18 ]
-            home:
-              column_net: P19
-              footprints.diode.anchor.shift: [ 71, -30 ]
-            top:
-              column_net: P18
-              footprints.diode.anchor.shift: [ 71, -42 ]
+          key:
+            column_net: P1
+            column_mark: M
         index:
           origin: [ 0, -17 ]
           rotate: -5 # 0 degrees
           stagger: -3
           spread: 20
-          rows:
-            bottom:
-              column_net: P15
-              footprints.diode.anchor.shift: [ 55, -11 ]
-            home:
-              column_net: P14
-              footprints.diode.anchor.shift: [ 55, -23 ]
-            top:
-              column_net: P16
-              footprints.diode.anchor.shift: [ 55, -35 ]
+          key:
+            column_net: P15
+            column_mark: IN
         inner:
           origin: [ 0, -17 ]
           rotate: 0
           stagger: -1
-          rows:
-            bottom:
-              column_net: P20
-              footprints.diode.anchor.shift: [ 40, -11 ]
-            home:
-              column_net: P20
-              footprints.diode.anchor.shift: [ 40, -23 ]
-            top:
-              column_net: P20
-              footprints.diode.anchor.shift: [ 40, -35 ]
+          key:
+            column_net: P10
+            column_mark: I
       rows:
         # Choc Y spacing 17mm
         # NOTE: added .1mm to stop keycap outlines from merging
         bottom:
           padding: 17.1
-          row_net: P10
+          row_net: P16
         home:
           padding: 17.1
           row_net: P20
@@ -97,29 +61,23 @@ points:
       columns:
         near:
           rotate: -15
-          rows:
-            thumb:
-              column_net: P8
-              footprints.diode.anchor.shift: [ 38 , 17 ]
-              footprints.diode.anchor.rotate: 0
+          key:
+            column_net: P1
+            column_mark: M
         home:
           spread: 19
           rotate: -10 # -25 degrees cumulative
           origin: [-9.5, -9]
-          rows:
-            thumb:
-              column_net: P9
-              footprints.diode.anchor.shift: [ 20, 19 ]
-              footprints.diode.anchor.rotate: 0
+          key:
+            column_net: P15
+            column_mark: IN
         far:
           spread: 19
           rotate: -10 # 35 degrees cumulative
           origin: [-9.5, -9]
-          rows:
-            thumb:
-              column_net: P10
-              footprints.diode.anchor.shift: [ 12 , 19 ]
-              footprints.diode.anchor.rotate: 0
+          key:
+            column_net: P10
+            column_mark: I
       rows:
         thumb:
           padding: 0
