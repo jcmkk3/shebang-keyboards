@@ -87,8 +87,8 @@ points:
       choc_hotswap:
         type: choc
         nets:
-          from: =column_net
-          to: GND
+          from: =colrow
+          to: =column_net
         params:
           keycaps: true
           reverse: true
@@ -98,8 +98,8 @@ points:
         anchor:
           rotate: 180
         nets:
-          from: =column_net
-          to: GND
+          from: =colrow
+          to: =column_net
         params:
           keycaps: true
           reverse: true
