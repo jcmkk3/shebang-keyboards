@@ -17,7 +17,7 @@ points:
           stagger: 10
           spread: 23
           key:
-            column_net: P3
+            column_net: P5
             column_mark: R
         middle:
           origin: [ 0, -17 ]
@@ -25,7 +25,7 @@ points:
           stagger: -1
           spread: 18
           key:
-            column_net: P1
+            column_net: P6
             column_mark: M
         index:
           origin: [ 0, -17 ]
@@ -33,14 +33,14 @@ points:
           stagger: -3
           spread: 20
           key:
-            column_net: P15
+            column_net: P21
             column_mark: IN
         inner:
           origin: [ 0, -17 ]
           rotate: 0
           stagger: -1
           key:
-            column_net: P10
+            column_net: P20
             column_mark: I
       rows:
         # Choc Y spacing 17mm
@@ -50,10 +50,10 @@ points:
           row_net: P16
         home:
           padding: 17.1
-          row_net: P20
+          row_net: P17
         top:
           padding: 17.1
-          row_net: P21
+          row_net: P18
     thumbfan:
       anchor:
         ref: matrix_inner_bottom
@@ -62,22 +62,22 @@ points:
         near:
           rotate: -15
           key:
-            column_net: P1
+            column_net: P6
             column_mark: M
         home:
           spread: 19
           rotate: -10 # -25 degrees cumulative
           origin: [-9.5, -9]
           key:
-            column_net: P15
-            column_mark: IN
+            column_net: P5
+            column_mark: R
         far:
           spread: 19
           rotate: -10 # 35 degrees cumulative
           origin: [-9.5, -9]
           key:
-            column_net: P10
-            column_mark: I
+            column_net: P4
+            column_mark: P
       rows:
         thumb:
           padding: 0
@@ -111,6 +111,9 @@ points:
         nets:
           from: =colrow
           to: =row_net
+        params:
+          via: true
+          trough_hole: false
 outlines:
   exports:
     raw:
@@ -184,12 +187,12 @@ pcbs:
           shift: [ -3, -20 ]
           rotate: -90
         nets:
-          from: P20 # TODO fix
+          from: P21 # TODO fix
           to: GND
-          A: P20  # TODO fix
-          B: P20  # TODO fix
-          C: P20  # TODO fix
-          D: P20  # TODO fix
+          A: P8 # TODO fix
+          B: P9 # TODO fix
+          C: P14 # TODO fix
+          D: P15 # TODO fix
         params:
           reverse: true
 cases:
