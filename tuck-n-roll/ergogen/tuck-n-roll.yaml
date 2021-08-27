@@ -112,7 +112,7 @@ points:
           from: =colrow
           to: =row_net
         params:
-          via: true
+          via_in_pad: true
           trough_hole: false
 outlines:
   exports:
