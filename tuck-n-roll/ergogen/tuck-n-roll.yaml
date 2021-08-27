@@ -113,7 +113,7 @@ points:
           to: =row_net
         params:
           via_in_pad: true
-          trough_hole: false
+          through_hole: false
 outlines:
   exports:
     raw:
