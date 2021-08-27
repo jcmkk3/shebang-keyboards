@@ -187,19 +187,19 @@ pcbs:
           shift: [ -3, -20 ]
           rotate: -90
         nets:
-          from: P21 # TODO fix
+          from: P21
           to: GND
-          A: P8 # TODO fix
-          B: P9 # TODO fix
-          C: P14 # TODO fix
-          D: P15 # TODO fix
+          A: P8
+          B: P9
+          C: P14
+          D: P15
         params:
           reverse: true
 cases:
   switchplate:
-    - type: outline # default option
+    - type: outline
       name: switch_plate
-      extrude: 1.2 # mm, choc MX
-      shift: [ 0, 0, 0 ] # [x, y, z]
-      rotate: [ 0, 0, 0 ] # [ax, ay, az]
-      operation: add # add | subtract | intersect # default = add
+      extrude: 1.2 # mm, choc
+      shift: [ 0, 0, 0 ]
+      rotate: [ 0, 0, 0 ]
+      operation: add
