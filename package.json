@@ -1,0 +1,9 @@
+{
+    "scripts": {
+        "pre-install": "npm install && cd node_modules/kle-serial && npm install && npm run build",
+        "gen": "ergogen tuck-n-roll/ergogen/tuck-n-roll.yaml --output tuck-n-roll/ergogen/output"
+    },
+    "dependencies": {
+        "ergogen": "^3.0.0"
+    }
+}
