@@ -1,4 +1,4 @@
-# !#/kb/
+# !#/keyboards/
 
 A collection of keyboards I'm working on, generated using [Ergogen](https://github.com/mrzealot/ergogen)
 
