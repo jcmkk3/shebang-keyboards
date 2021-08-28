@@ -4,7 +4,7 @@ points:
     matrix:
       columns:
         pinky:
-          origin: [ 0, -17 ]
+          origin: [ 0, -1cy ]
           rotate: 19  # 19 degrees
           stagger: 0 # affects distance to previous column so useless for a left pinky column
           spread: 0 # affects distance to previous column so useless for a left pinky column
@@ -12,7 +12,7 @@ points:
             column_net: P4
             column_mark: P
         ring:
-          origin: [ 0, -17 ]
+          origin: [ 0, -1cy ]
           rotate: -4 # 15 degrees
           stagger: 10
           spread: 23
@@ -20,7 +20,7 @@ points:
             column_net: P5
             column_mark: R
         middle:
-          origin: [ 0, -17 ]
+          origin: [ 0, -1cy ]
           rotate: -10 # 5 degrees
           stagger: -1
           spread: 18
@@ -28,7 +28,7 @@ points:
             column_net: P6
             column_mark: M
         index:
-          origin: [ 0, -17 ]
+          origin: [ 0, -1cy ]
           rotate: -5 # 0 degrees
           stagger: -3
           spread: 20
@@ -36,23 +36,21 @@ points:
             column_net: P21
             column_mark: IN
         inner:
-          origin: [ 0, -17 ]
+          origin: [ 0, -1cy ]
           rotate: 0
           stagger: -1
           key:
             column_net: P20
             column_mark: I
       rows:
-        # Choc Y spacing 17mm
-        # NOTE: added .1mm to stop keycap outlines from merging
         bottom:
-          padding: 17.1
+          padding: 1cy
           row_net: P16
         home:
-          padding: 17.1
+          padding: 1cy
           row_net: P17
         top:
-          padding: 17.1
+          padding: 1cy
           row_net: P18
     thumbfan:
       anchor:
@@ -146,7 +144,7 @@ outlines:
     keycap_outlines:
       - type: keys
         side: left
-        size: [18, 17]
+        size: [17.9, 16.9]
         bound: false
     switch_plate:
       main:
@@ -167,7 +165,7 @@ outlines:
         name: keycap_outlines
         operation: subtract
 pcbs:
-  alpha:
+  tuck-n-roll:
     outlines:
       main:
         outline: panel
