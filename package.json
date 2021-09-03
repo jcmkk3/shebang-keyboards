@@ -1,9 +1,10 @@
 {
     "scripts": {
         "gen": "ergogen tuck-n-roll/ergogen/tuck-n-roll.yaml --output tuck-n-roll/ergogen/output",
-        "beardboard": "ergogen beardboard/ergogen/beardboard.yaml --output beardboard/ergogen/output"
+        "beardboard": "ergogen beardboard/ergogen/beardboard.yaml --output beardboard/ergogen/output",
+        "svgtest": "ergogen svgtest/ergogen/svgtest.yaml --output svgtest/ergogen/output"
     },
     "dependencies": {
-        "ergogen": "github:MvEerd/ergogen#diodes-kle-serial"
+        "ergogen": "github:MvEerd/ergogen#svgpath"
     }
 }

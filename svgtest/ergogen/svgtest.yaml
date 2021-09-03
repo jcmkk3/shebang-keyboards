@@ -1,0 +1,44 @@
+points:
+  rotate: 0
+  mirror:
+    ref: matrix_ring_home
+    distance: 100
+  zones:
+    matrix:
+      columns:
+        ring:
+          origin: [ 0, -1cy ]
+          rotate: -10 # test rotation
+          stagger: 10
+          spread: 23
+          key:
+            column_net: P5
+      rows:
+        home:
+          padding: 1cy
+  key:
+    footprints:
+      choc:
+        type: choc
+        nets:
+          from: =colrow
+          to: =column_net
+        params:
+          keycaps: true
+          reverse: true
+
+outlines:
+  exports:
+    svgtest:
+      - type: svgpath
+        path: "M 95 35 L 59 35 L 48 0 L 36 35 L 0 35 L 29 56 L 18 90 L 48 69 L 77 90 L 66 56 Z"
+        anchor:
+          ref: matrix_ring_home
+          shift: [-48, 50]
+          rotate: 0
+        mirror: true
+pcbs:
+  starpcb:
+    outlines:
+      main:
+        outline: svgtest
