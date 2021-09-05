@@ -3,6 +3,6 @@
         "gen": "ergogen tuck-n-roll/ergogen/tuck-n-roll.yaml --output tuck-n-roll/ergogen/output"
     },
     "dependencies": {
-        "ergogen": "github:MvEerd/ergogen#diodes-kle-serial"
+        "ergogen": "github:MvEerd/ergogen#mveerd"
     }
 }
