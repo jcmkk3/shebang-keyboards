@@ -13,3 +13,8 @@ To generate the PCBs from scratch to `ergogen/output` run;
 `36 key keyboard with two tucky thumb encoders`
 
 ![tuck-n-roll](tuck-n-roll/tuck-n-roll.png)
+
+### - [plank](./plank)
+`A Plank keyboard`
+
+![plank](plank/plank.png)
