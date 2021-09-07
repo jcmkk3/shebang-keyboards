@@ -173,6 +173,48 @@ pcbs:
         nets:
           from: GND
           to: RST
+      mounthole1:
+        type: mountinghole
+        anchor:
+          ref: matrix_twelve_top
+          shift: [-0.3cx, -0.5cy]
+        nets:
+          from: GND
+      mounthole2:
+        type: mountinghole
+        anchor:
+          ref: matrix_twelve_bottom
+          shift: [-0.5cx, -0.5cy]
+        nets:
+          from: GND
+      mounthole3:
+        type: mountinghole
+        anchor:
+          ref: matrix_eight_home
+          shift: [-0.5cx, -0.5cy]
+        nets:
+          from: GND
+      mounthole4:
+        type: mountinghole
+        anchor:
+          ref: matrix_six_home
+          shift: [-0.5cx, -0.5cy]
+        nets:
+          from: GND
+      mounthole5:
+        type: mountinghole
+        anchor:
+          ref: matrix_two_top
+          shift: [-0.5cx, -0.5cy]
+        nets:
+          from: GND
+      mounthole6:
+        type: mountinghole
+        anchor:
+          ref: matrix_two_bottom
+          shift: [-0.5cx, -0.5cy]
+        nets:
+          from: GND
       groundfill:
         type: rawkicad
         params:
