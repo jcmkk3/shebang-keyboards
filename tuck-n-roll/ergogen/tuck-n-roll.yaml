@@ -141,6 +141,16 @@ outlines:
         side: left
         size: 14
         bound: false
+    thumbfan_far_thumb_outline:
+      - type: rectangle
+        size: 14
+        anchor:
+          ref: thumbfan_far_thumb
+    matrix_inner_top_outline:
+      - type: rectangle
+        size: 14
+        anchor:
+          ref: matrix_inner_top
     keycap_outlines:
       - type: keys
         side: left
@@ -171,6 +181,19 @@ cases:
       extrude: 1.2 # mm, choc
       shift: [ 0, 0, 0 ]
       rotate: [ 0, 0, 0 ]
+      operation: add
+  testplate:
+    - type: outline
+      name: matrix_inner_top_outline
+      extrude: 1.2 # mm, choc
+      shift: [ 0, 0, 0 ]
+      rotate: [ 20, 0, 0 ]
+      operation: add
+    - type: outline
+      name: thumbfan_far_thumb_outline
+      extrude: 1.2 # mm, choc
+      shift: [ 0, 0, 0 ]
+      rotate: [ 20, 0, 0 ]
       operation: add
 pcbs:
   tuck-n-roll:
