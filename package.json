@@ -4,6 +4,6 @@
         "beardboard": "ergogen beardboard/ergogen/beardboard.yaml --output beardboard/ergogen/output"
     },
     "dependencies": {
-        "ergogen": "github:MvEerd/ergogen#diodes-kle-serial"
+        "ergogen": "github:MvEerd/ergogen#holyiot-18010"
     }
 }
