@@ -81,7 +81,7 @@ points:
           padding: 0
           row_net: P7
   key:
-    bind: 0.5
+    bind: 0.1
     footprints:
       choc_hotswap:
         type: choc
@@ -120,49 +120,95 @@ outlines:
         side: left
         size: [ 1cx,1cy ]
         corner: 0
-        bevel: 4
+        bevel: 0
+      - type: rectangle
+        size: [20, 7]
+        anchor:
+          ref: matrix_index_home
+          shift: [-0.5cx, 0]
+        operation: add
+      - type: rectangle
+        size: [20, 7]
+        anchor:
+          ref: matrix_pinky_home
+          shift: [-3, 0]
+        operation: add
+      - type: rectangle
+        size: [20, 7]
+        anchor:
+          ref: matrix_index_home
+          shift: [-20, 0]
+          rotate: 3
+        operation: add
+      - type: rectangle
+        size: [20, 7]
+        anchor:
+          ref: matrix_middle_home
+          shift: [-20, -3]
+          rotate: 7
+        operation: add
+      - type: rectangle
+        size: [5, 20]
+        anchor:
+          ref: matrix_inner_bottom
+          shift: [0, -20]
+          rotate: -1
+        operation: add
+      - type: rectangle
+        size: [20, 5]
+        anchor:
+          ref: thumbfan_near_thumb
+          shift: [0, 3]
+          rotate: -8
+        operation: add
+      - type: rectangle
+        size: [20, 5]
+        anchor:
+          ref: thumbfan_home_thumb
+          shift: [0, -0.2]
+          rotate: 0
+        operation: add
+      - type: rectangle
+        size: [20, 2.5cy + 0.1]
+        anchor:
+          ref: matrix_inner_bottom
+          shift: [0.7cx, 0]
+          rotate: 0
+        operation: add
+      - type: rectangle
+        size: [20, 7]
+        anchor:
+          ref: matrix_inner_bottom
+          shift: [0, 0]
+          rotate: 0
+        operation: add
+      - type: rectangle
+        size: [20, 7]
+        anchor:
+          ref: matrix_inner_home
+          shift: [0, 0]
+          rotate: 0
+        operation: add
+      - type: rectangle
+        size: [20, 7]
+        anchor:
+          ref: matrix_inner_top
+          shift: [0, -1]
+          rotate: 0
+        operation: add
     panel:
       - type: outline
         name: raw
-        fillet: 0.5
+        fillet: 1
+    test:
+      - type: outline
+        name: raw
+        fillet: 1
     switch_cutouts:
       - type: keys
         side: left
         size: 14
         bound: false
-    thumbfan_far_thumb_outline:
-      - type: rectangle
-        size: 14
-        anchor:
-          ref: thumbfan_far_thumb
-    matrix_inner_top_outline:
-      - type: rectangle
-        size: 14
-        anchor:
-          ref: matrix_inner_top
-    keycap_outlines:
-      - type: keys
-        side: left
-        size: [17.9, 16.9]
-        bound: false
-    switch_plate:
-      main:
-        type: outline
-        name: raw
-        fillet: 0.5
-      keyholes:
-        type: outline
-        name: switch_cutouts
-        operation: subtract
-    choc_caps_plate:
-      main:
-        type: outline
-        name: raw
-        fillet: 0.5
-      keycaps:
-        type: outline
-        name: keycap_outlines
-        operation: subtract
 pcbs:
   tuck-n-roll:
     outlines:
@@ -172,8 +218,8 @@ pcbs:
       promicro:
         type: promicro
         anchor:
-          ref: matrix_inner_top
-          shift: [28, -8]
-          rotate: 90
+          ref: matrix_inner_home
+          shift: [22.4, 7.8740]
+          rotate: -90
         params:
           orientation: down
