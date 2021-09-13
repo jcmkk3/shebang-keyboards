@@ -209,6 +209,15 @@ pcbs:
           rotate: -127
         params:
           orientation: down
+      reset:
+        type: tactswitch
+        anchor:
+          ref: matrix_inner_top
+          shift: [43, -10]
+          rotate: 53
+        nets:
+          from: GND
+          to: RST
       scrollwheel:
         type: scrollwheel
         anchor:
@@ -3195,6 +3204,11 @@ pcbs:
   (via (at 110.998 18.542) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 27) (tstamp ea673f1a-e376-4274-80c5-c23655787db7))
   (segment (start 110.998 18.542) (end 110.063052 14.11545) (width 0.25) (layer "B.Cu") (net 27) (tstamp 6e7643eb-9eff-40ba-80ca-9c0a284bc8d7))
   (segment (start 52.052091 -5.015601) (end 52.052091 6.234399) (width 0.25) (layer "B.Cu") (net 29) (tstamp d5b31b61-38bf-49cb-91ca-39f8d1f9507b))
+  (segment (start 120.319899 -47.299565) (end 120.27799 -44.986166) (width 0.25) (layer "F.Cu") (net 30) (tstamp 07391f48-cc52-473b-bbdd-745b74292409))
+  (segment (start 115.991268 -50.886732) (end 113.538 -47.752) (width 0.25) (layer "F.Cu") (net 30) (tstamp 5da4c191-f93d-4f02-a8a7-1286bbab58e9))
+  (segment (start 113.538 -47.752) (end 102.586624 -56.076301) (width 0.25) (layer "F.Cu") (net 30) (tstamp 5fa912ef-1571-4485-874f-fae847bb315e))
+  (segment (start 120.319899 -47.299565) (end 116.031085 -50.886732) (width 0.25) (layer "F.Cu") (net 30) (tstamp 97341525-94e3-40c5-8719-2217ce669327))
+  (segment (start 116.031085 -50.886732) (end 115.991268 -50.886732) (width 0.25) (layer "F.Cu") (net 30) (tstamp e4afaed7-6bad-4cc4-848a-460f57c7418f))
   (segment (start 81.085896 -6.66249) (end 102.528948 -28.105542) (width 0.25) (layer "F.Cu") (net 39) (tstamp 21cce39f-6cdc-48b4-9487-513d13f91a26))
   (segment (start 57.132091 6.234399) (end 57.132091 2.557909) (width 0.25) (layer "F.Cu") (net 39) (tstamp 5129c7a4-69ab-4ed0-aac2-fde7a3a69197))
   (segment (start 57.132091 2.557909) (end 66.35249 -6.66249) (width 0.25) (layer "F.Cu") (net 39) (tstamp 685fa29d-0dec-4306-a124-4c1c77572dca))
