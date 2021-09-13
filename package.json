@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "gen": "ergogen tuck-n-roll/ergogen/tuck-n-roll.yaml --output tuck-n-roll/ergogen/output && ergogen plank/ergogen/plank.yaml --output plank/ergogen/output"
+        "gen": "ergogen tuck-n-roll/ergogen/tuck-n-roll.yaml --output tuck-n-roll/ergogen/output && ergogen plank/ergogen/plank.yaml --output plank/ergogen/output && ergogen flextest/ergogen/flextest.yaml --output flextest/ergogen/output"
     },
     "dependencies": {
         "ergogen": "github:MvEerd/ergogen#mountinghole"
