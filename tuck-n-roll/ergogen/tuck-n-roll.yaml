@@ -154,7 +154,7 @@ outlines:
     keycap_outlines:
       - type: keys
         side: left
-        size: [17.9, 16.9]
+        size: [1cx - 0.5, 1cy - 0.5] # Choc keycaps are 17.5 x 16.5
         bound: false
     switch_plate:
       main:
@@ -181,7 +181,7 @@ cases:
       extrude: 1.2 # mm, choc
       shift: [ 0, 0, 0 ]
       rotate: [ 0, 0, 0 ]
-      operation: add
+      operation: addk
   testplate:
     - type: outline
       name: matrix_inner_top_outline
